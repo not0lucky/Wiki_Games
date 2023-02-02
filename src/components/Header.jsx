@@ -17,10 +17,15 @@ function Header() {
 
 const Countainer = styled.div`
     height: 130px;
-    width: 100vw;
+    //width: 100vw;
     display: flex;
     align-items: center;
     justify-content:center;
+
+    @media (max-width: 768px) {
+    width: 100%;
+   
+  }
 `
 
 const Title = styled.h1`
@@ -31,6 +36,11 @@ const Title = styled.h1`
   span{
     color: #1864b0;
   }
+
+  @media (max-width: 768px) {
+    font-size: 53px;
+  }
+
 `
 
 

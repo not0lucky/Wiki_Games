@@ -65,13 +65,28 @@ const Countainer = styled.div`
         margin-bottom: 60px;
        align-items: baseline;
        justify-content: space-between;
+
+       @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 100px;
+  }
     }
 
+    @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 const Title = styled.h1`
     font-weight: 600;
     font-size: 60px;
     
+    @media (max-width: 768px) {
+    text-align: center;
+  }
 `
 
 const PopularList = styled.div`
@@ -79,6 +94,11 @@ const PopularList = styled.div`
     align-items: center;
     justify-content: center;
     gap: 20px;
+
+    @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 70px;
+  }
 `
 
 const ShowMore = styled.a`
@@ -93,6 +113,11 @@ const ShowMore = styled.a`
         text-decoration: underline;
         color: #1f70c2;
     }
+
+    @media (max-width: 768px) {
+    font-size: 18px;
+    text-decoration: underline;
+  }
 `
 
 const PopularCard = styled.div`

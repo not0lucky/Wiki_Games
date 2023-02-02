@@ -33,6 +33,7 @@ function PlatformSideBar() {
     <>
           <PlatformCountainer>
             <PlatformTitle>Platforms</PlatformTitle>
+            <PlatformList>
             {platformsFetched && platformsFetched.slice(0,genreVisible).map((item)=>(
               <PlatformCard key={item.id}>
                 <PlatformImg src={item.image_background} height='35' width='35'/>
@@ -40,14 +41,15 @@ function PlatformSideBar() {
               </PlatformCard>
             ))}
             {genreVisible == 3 ? 
-            <PlatformCard onClick={()=> ShowHide()}>
+            <ButCard onClick={()=> ShowHide()}>
               <PlatformName>Show More</PlatformName>
-            </PlatformCard>
+            </ButCard>
             :
-            <PlatformCard onClick={()=> ShowHide()}>
+            <ButCard onClick={()=> ShowHide()}>
               <PlatformName>Hide</PlatformName>
-            </PlatformCard>
+            </ButCard>
             }
+            </PlatformList>
           </PlatformCountainer>
         
     </>
@@ -60,6 +62,11 @@ const PlatformCountainer = styled.div`
   flex-direction: column;
   color: white;
   padding: 0px 25px 25px;
+  @media (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+  }
+
 `
 
 const PlatformTitle = styled.h2`
@@ -67,6 +74,21 @@ const PlatformTitle = styled.h2`
   font-weight: 700;
   margin: 20px 10px;
   color: white;
+  @media (max-width: 768px) {
+    font-size: 33px;
+  }
+`
+
+const PlatformList = styled.div`
+display: flex;
+    flex-direction: column;
+   @media (max-width: 768px) {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `
 
 const PlatformCard = styled.div`
@@ -77,7 +99,13 @@ const PlatformCard = styled.div`
   gap: 10px;
   padding: 10px;
   border-radius: 10px;
-  
+
+  @media (max-width: 768px) {
+    font-size: 53px;
+    margin: 10px auto;
+    gap: 20px;
+    justify-content: center;
+  }
 `
 const PlatformImg = styled.img`
   border-radius: 10px;
@@ -85,6 +113,27 @@ const PlatformImg = styled.img`
 `
 const PlatformName = styled.p`
   font-size: 15px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+`
+
+const ButCard = styled.div`
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #1f70c2;
+  
+  @media (max-width: 768px) {
+    font-size: 53px;
+    margin: 10px auto;
+    gap: 20px;
+    justify-content: center;
+  }
 `
 
 export default PlatformSideBar

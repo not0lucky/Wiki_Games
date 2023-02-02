@@ -23,6 +23,10 @@ const Countainer = styled.div`
   background-color: #1a1a1a;
   width: 250px;
   
+  @media (max-width: 768px) {
+    
+    width: 100%;
+  }
 `
 
 

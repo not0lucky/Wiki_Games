@@ -70,11 +70,18 @@ const Countainer = styled.div`
   color: white;
   padding: 100px 55px;
 
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 100px 0px;
+  }
 `
 const Title = styled.h1`
     font-weight: 600;
     font-size: 60px;
     margin-bottom: 120px;
+    @media (max-width: 768px) {
+    text-align: center;
+  }
 `
 
 const GamesList = styled.div`
@@ -83,7 +90,13 @@ const GamesList = styled.div`
   row-gap: 40px;
   column-gap: 25px;
   width: 100%;
-
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+  }
   
 `
 const UpcomingCard = styled.div`

@@ -17,6 +17,7 @@ function App() {
   return (
     <div>
       <AppContext>
+        <Page>
       <Header/>
       <Countainer>
       <SideBar/>
@@ -30,6 +31,7 @@ function App() {
         <Route path='/SearchResult' element={<SearchResultPage/>}></Route>
       </Routes>
       </Countainer>
+      </Page>
       </AppContext>
     </div>
   )
@@ -38,6 +40,21 @@ function App() {
 const Countainer = styled.div`
   background-color: #1a1a1a;
   display: flex;
+
+   @media (max-width: 768px) {
+    
+    flex-direction: column;
+  }
+
+`
+
+const Page = styled.div`
+
+
+@media (max-width: 768px) {
+  width: 100%;
+  
+  }
 `
 
 export default App
