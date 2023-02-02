@@ -122,8 +122,9 @@ const ButCard = styled.div`
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 150px;
-  gap: 10px;
+  margin-top: 20px;
   padding: 15px;
   border-radius: 10px;
   border: 1px solid #1f70c2;
