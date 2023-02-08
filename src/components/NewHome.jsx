@@ -96,8 +96,19 @@ const NewList = styled.div`
     gap: 20px;
 
     @media (max-width: 768px) {
+    display: flex;
     flex-direction: column;
     gap: 70px;
+  }
+
+  @media (max-width: 1200px) {
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
   }
 `
 

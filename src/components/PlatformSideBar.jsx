@@ -66,6 +66,11 @@ const PlatformCountainer = styled.div`
     align-items: center;
     justify-content: center;
   }
+  @media (max-width: 1200px) {
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+  }
 
 `
 
@@ -82,12 +87,24 @@ const PlatformTitle = styled.h2`
 const PlatformList = styled.div`
 display: flex;
     flex-direction: column;
+   
    @media (max-width: 768px) {
     
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    gap: 10px;
+  }
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:20px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
   }
 `
 
@@ -131,10 +148,11 @@ const ButCard = styled.div`
   
   @media (max-width: 768px) {
     font-size: 53px;
-    margin: 10px auto;
+    margin: 30px auto;
     gap: 20px;
     justify-content: center;
   }
+  
 `
 
 export default PlatformSideBar

@@ -70,6 +70,10 @@ const GenreCountainer = styled.div`
     justify-content: center;
   }
 
+  @media (max-width: 1200px) {
+    align-items: center;
+    justify-content: center;
+  }
 `
 
 const GenreTitle = styled.h2`
@@ -87,12 +91,24 @@ const GenreTitle = styled.h2`
 const GenreList = styled.div`
 display: flex;
     flex-direction: column;
+
    @media (max-width: 768px) {
     
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    gap: 10px;
+  }
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:20px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
   }
 `
 
@@ -112,6 +128,7 @@ const GenreCard = styled.div`
     justify-content: center;
   }
 
+  
 `
 const GenreImg = styled.img`
   border-radius: 10px;

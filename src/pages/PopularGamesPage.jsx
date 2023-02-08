@@ -73,7 +73,7 @@ const Countainer = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    padding: 100px 0px;
+    //padding: 100px 0px;
   }
 
 `
@@ -99,6 +99,16 @@ const GamesList = styled.div`
     align-items: center;
     justify-content: center;
     gap: 70px;
+  }
+
+  @media (max-width: 1200px) {
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
   }
 `
 const PopularCard = styled.div`

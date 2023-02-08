@@ -97,6 +97,16 @@ const GamesList = styled.div`
     justify-content: center;
     gap: 70px;
   }
+
+  @media (max-width: 1200px) {
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+  }
   
 `
 const UpcomingCard = styled.div`

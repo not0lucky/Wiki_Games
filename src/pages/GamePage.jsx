@@ -155,7 +155,11 @@ const Countainer = styled.div`
     background: linear-gradient(rgba(26,26,26,0.5),rgba(26,26,26,0.8),rgba(26,26,26,1)),url("https://media.rawg.io/media/games/1c3/1c305096502c475c00276c827f0fd697.jpg") top left  / cover;
      height: 55%;
      width: calc(100vw  - 250px);
-     
+
+     @media (max-width: 1200px) {
+   
+   background: none;
+  }
     img{
       width:100%;
       height: calc(100vh - 160px);
@@ -172,6 +176,15 @@ const Content = styled.div`
   position: relative;
   padding: 100px 65px;
   display: flex;
+   @media (max-width: 1200px) {
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    //gap: 40px;
+    
+  }
 `
 const Link = styled.a`
   cursor: pointer;
@@ -184,6 +197,9 @@ const Link = styled.a`
 const Title = styled.h1`
   font-size: 50px;
   margin-bottom: 10px;
+  @media (max-width: 1200px) {
+   text-align: center;
+  }
 `
 
 const Genres = styled.div`
@@ -193,6 +209,7 @@ const Genres = styled.div`
 `
 
 const About = styled.div`
+
   .title{
     font-size: 28px;
     margin-bottom:10px ;
@@ -204,6 +221,11 @@ const About = styled.div`
     font-size: 15px;
     line-height: 1.5;
     margin-bottom: 50px;
+
+    @media (max-width: 1200px) {
+   width: 100%;
+
+  }
   }
 `
 
@@ -241,6 +263,9 @@ const Tags = styled.div`
 const Rows = styled.div`
   display: flex;
   gap: 110px;
+  @media (max-width: 1200px) {
+   gap: 60px;
+  }
 `
 
 const RowL =styled.div`
@@ -249,11 +274,15 @@ const RowL =styled.div`
   align-items: flex-start;
   width: 330px;
   
-  
+  @media (max-width: 1200px) {
+   width: 50%;
+  }
 `
 
 const RowR = styled.div`
-  
+  @media (max-width: 1200px) {
+   width: 50%;
+  }
 `
 
 const Left = styled.div`
@@ -261,13 +290,26 @@ const Left = styled.div`
   flex-direction: column;
   margin-right: 70px;
   width: 700px;
+
+  @media (max-width: 1200px) {
+   
+    //justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-right: 0px;
+  }
 `
 
 const Right = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 160px;
-  
+
+   @media (max-width: 1200px) {
+    width: 100vw;
+   margin-top: 40px ;
+   align-items: center;
+  }
 `
 
 const Pictures = styled.div`
@@ -277,6 +319,16 @@ const Pictures = styled.div`
   grid-template-columns: 1fr 1fr;
   row-gap: 15px ;
   column-gap: 10px;
+
+   @media (max-width: 1200px) {
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+  }
 `
 const Snap = styled.img`
   border-radius: 10px;
@@ -311,6 +363,11 @@ const RightBut = styled.div`
       text-decoration: none;
       color: white;
     }
+
+    @media (max-width: 1200px) {
+   width: 50%;
+   font-size: 16px;
+  }
 `
 
 export default GamePage
