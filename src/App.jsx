@@ -29,7 +29,8 @@ function App() {
         <Route path='/PopularGames' element={<PopularGamesPage/>}></Route>
         <Route path='/NewGames' element={<NewGamesPage/>}></Route>
         <Route path='/UpcomingGames' element={<UpcomingGamesPage/>}></Route>
-        <Route path='/SearchResult' element={<SearchResultPage/>}></Route>
+        <Route path='/SearchResult/:search' element={<SearchResultPage/>}></Route>
+
       </Routes>
       </Countainer>
       </Page>

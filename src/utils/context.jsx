@@ -10,11 +10,12 @@ const AppContext = ({children}) => {
     const [popularFetched,setPopularFetched] = useState('')
     const [newFetched,setNewFetched] = useState('')
     const [upcomingFetched,setUpcomingFetched] = useState('')
+    const [searchFetched,setSearchFetched] = useState('')
     
 
 
     return(
-        <Context.Provider value={{gamesFetched,setGamesFetched,genresFetched,setGenresFetched,popularFetched,setPopularFetched,newFetched,setNewFetched,upcomingFetched,setUpcomingFetched,platformsFetched, setPlatformsFetched}}>
+        <Context.Provider value={{gamesFetched,setGamesFetched,genresFetched,setGenresFetched,popularFetched,setPopularFetched,newFetched,setNewFetched,upcomingFetched,setUpcomingFetched,platformsFetched, setPlatformsFetched,searchFetched,setSearchFetched}}>
             {children}
         </Context.Provider>
     )

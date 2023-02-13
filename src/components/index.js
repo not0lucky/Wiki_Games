@@ -5,6 +5,7 @@ import PlatformSideBar from "./PlatformSideBar";
 import PopularHome from "./PopularHome";
 import NewHome from "./NewHome";
 import UpcomingHome from "./UpcomingHome";
+import SearchBar from "./SearchBar";
 
 export{
     Header,
@@ -13,5 +14,6 @@ export{
     PlatformSideBar,
     PopularHome,
     NewHome,
-    UpcomingHome
+    UpcomingHome,
+    SearchBar
 }

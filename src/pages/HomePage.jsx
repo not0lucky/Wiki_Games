@@ -1,7 +1,7 @@
 import React,{useContext,useEffect} from 'react'
 import { Context } from '../utils/context'
 import axios from 'axios'
-import { PopularHome,NewHome,UpcomingHome } from '../components'
+import { PopularHome,NewHome,UpcomingHome,SearchBar } from '../components'
 import { upcomingGamesGet,popularGamesGet,newGamesGet,gameGenresGet,gamePlatformsGet } from '../utils/constants'
 import styled from 'styled-components'
 
@@ -102,6 +102,7 @@ function HomePage() {
   return (
     <>
         <Countainer>
+            <SearchBar />
             <PopularHome/>
             <NewHome/>
             <UpcomingHome/>
